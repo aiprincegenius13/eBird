@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .scroll-bar {
+    width: 30%;
+    overflow-y: scroll;
+    border-right: 1px solid black;
+  }
+  
+  #bird-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #bird-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #bird-list li:hover {
+    background-color: gray;
+  }
+  
+  #bird-info {
+    padding: 20px;
+    flex-grow: 1;
+  }
+  
