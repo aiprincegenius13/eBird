@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>  The birds of the world</h1>
-
-    <div class="container">
-        <div  class="scroll-bar">
-            <ul>
-            <!-- List of Birds -->
-            </ul>
+    <header>
+        <h1>Images of the Great Beyond</h1>
+        <form id="search-form">
+            <label for="search-query">Search Images:</label>
+            <input type="text" id="search-query" placeholder="Enter search term" required>
+            <button type="submit">Search</button>
+            <link rel="stylesheet" href="styles.css">
+        </form>
+    </header>
+    <main>
+        <div id="gallery-container">
+            <!-- Images  -->
         </div>
-        <div id="bird-info">
-            <!-- bird INformation -->
+        <div id="image-info" style="display: none;">
+            <!-- Image info  -->
         </div>
-    </div>
-
-    <!--   INformation should contain species, numbe of 
-       times spotted, the date in which it was spotted
-       ,person spotted the bird and location -->
-
-    <script src="script.js"></script>
+    </main>
+    
+    <script type="module" src="main.js"></script>
 </body>
 </html>
